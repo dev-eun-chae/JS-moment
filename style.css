@@ -1,11 +1,17 @@
 body {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  color: white;
 }
 
+.container {
+  width: 100%;
+  padding: 4em;
+}
 .hidden {
   display: none;
 }
@@ -21,13 +27,17 @@ div {
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  width: 50%;
 }
 
 /* 시계 */
 
 .clock {
-  font-size: 4em;
+  font-size: 5em;
+  text-shadow: 0px 1px #ffffff, 4px 4px 0px #dad7d7;
 }
 
 /* 날씨 */
@@ -36,10 +46,8 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  font-size: 1.5em;
-
-  padding-right: 2em;
+  font-size: 1.3em;
+  font-weight: 800;
 }
 
 .weather span:last-child {
@@ -49,15 +57,23 @@ form {
 /* login form */
 
 input {
-  height: 2em;
-  width: 18em;
+  height: 3em;
+  width: 100%;
 
   border-top: none;
   border-left: none;
   border-right: none;
+  color: whitesmoke;
+  font-size: 1.3em;
 
-  padding: 1em;
-  font-size: 1.5em;
+  padding: 0.5em;
+
+  background: transparent;
+}
+
+input::placeholder {
+  color: whitesmoke;
+  font-size: 1.3em;
 }
 
 .loginButton {
@@ -69,18 +85,24 @@ input {
   font-size: 1.5em;
 
   cursor: pointer;
+  margin: 2em 0em;
+}
+
+.loginButton:hover {
+  background-color: yellow;
 }
 
 /* 로그인 */
 
-h1 {
-  color: rosybrown;
+#greeting {
+  color: yellow;
+  font-weight: 700;
+  font-size: 3em;
 }
 
 /* 명언 */
 
 #quote {
-  border: 1px solid darkgray;
   padding: 2em;
 }
 
@@ -89,11 +111,19 @@ h1 {
   font-size: 1.3em;
 }
 
-#quote span:last-child {
-  color: darkgray;
+/* 투두리스트 */
+
+.todo-box-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  padding: 3em 1em;
 }
 
-/* 투두리스트 */
+.todo-list-box {
+  width: 100%;
+}
 
 ul {
   width: 100%;
@@ -112,12 +142,16 @@ li {
 
 .todo-button {
   border: none;
-  background-color: none;
   cursor: pointer;
+  background-color: transparent;
+}
+
+.todo-button:hover {
+  background-color: yellow;
 }
 
 /* 배경이미지  */
 
 img {
-  width: 30em;
+  width: 100%;
 }

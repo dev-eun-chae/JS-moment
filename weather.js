@@ -13,7 +13,7 @@ function onGeoOk(position) {
       const city = document.querySelector('#weather span:last-child');
 
       weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-      city.innerText = data.name;
+      city.innerText = data.name.split('-')[0];
     });
 }
 

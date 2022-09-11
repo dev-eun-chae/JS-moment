@@ -14,39 +14,48 @@
     <title>momentum app</title>
   </head>
   <body>
-    <div id="weather" class="weather">
-      <span></span>
-      <span></span>
+    <div class="container">
+      <div id="weather" class="weather">
+        <span></span>
+        <span></span>
+      </div>
+
+      <h2 id="clock" class="clock">00:00</h2>
+
+      <form id="loginForm" class="hidden">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="이름을 입력해주세요"
+        />
+        <button class="loginButton">로그인하기</button>
+      </form>
+
+      <h1 id="greeting" class="hidden"></h1>
+
+      <div id="quote">
+        <span></span><br />
+        <span></span>
+      </div>
+
+      <div id="todo-box" class="hidden">
+        <div class="todo-box-inner">
+          <form id="todo-form">
+            <h2>Todo list 작성하기</h2>
+            <input
+              type="text"
+              required
+              placeholder="할 일 입력 후 엔터를 눌러주세요"
+            />
+          </form>
+          <div class="todo-list-box">
+            <h2>Todo list 관리하기</h2>
+            <ul id="todo-list"></ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <h2 id="clock" class="clock">00:00</h2>
-
-    <form id="loginForm" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="이름을 입력해주세요"
-      />
-      <button class="loginButton">로그인하기</button>
-    </form>
-
-    <h1 id="greeting" class="hidden"></h1>
-
-    <div id="quote">
-      <span></span><br />
-      <span></span>
-    </div>
-
-    <form id="todo-form" class="hidden">
-      <input
-        type="text"
-        required
-        placeholder="할 일 입력 후 엔터를 눌러주세요"
-      />
-    </form>
-
-    <ul id="todo-list"></ul>
 
     <script src="app.js"></script>
     <script src="background.js"></script>
