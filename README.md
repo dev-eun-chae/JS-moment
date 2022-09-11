@@ -1,6 +1,6 @@
 # JS-moment
 
-[noardcoder-js.pdf](https://github.com/dev-eun-chae/JS-moment/files/9542926/noardcoder-js.pdf)
+![noardcoder-js_pages-to-jpg-0001](https://user-images.githubusercontent.com/104378330/189536759-a88e6db0-7155-4036-8318-00f8bfb3dfc7.jpg)
 
 
 ## 과제 필수조건
