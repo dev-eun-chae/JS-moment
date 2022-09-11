@@ -1,5 +1,8 @@
 # JS-moment
 
+[noardcoder-js.pdf](https://github.com/dev-eun-chae/JS-moment/files/9542926/noardcoder-js.pdf)
+
+
 ## 과제 필수조건
 - [:white_check_mark:  ] 실시간 시계
 - [:white_check_mark:  ] 로컬 스토리지를 사용한 로그인
