@@ -1,42 +1,32 @@
 body {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  overflow-x: hidden;
 }
 
 .container {
   width: 100%;
-  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 3em 0;
 }
+
 .hidden {
   display: none;
-}
-
-div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2em;
-  width: 50%;
 }
 
 /* 시계 */
 
 .clock {
-  font-size: 5em;
+  font-size: 4.5em;
   text-shadow: 0px 1px #ffffff, 4px 4px 0px #dad7d7;
 }
 
@@ -46,6 +36,8 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.3em;
   font-weight: 800;
 }
@@ -56,7 +48,19 @@ form {
 
 /* login form */
 
-input {
+.loginFormBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#loginForm input {
   height: 3em;
   width: 100%;
 
@@ -79,6 +83,7 @@ input::placeholder {
 .loginButton {
   background-color: pink;
   border: none;
+  border-radius: 8px;
   width: 20em;
 
   height: 3em;
@@ -103,26 +108,71 @@ input::placeholder {
 /* 명언 */
 
 #quote {
-  padding: 2em;
+  width: 100%;
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #quote span:first-child {
   font-style: italic;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* 투두리스트 */
 
+#todo-box {
+  width: 100%;
+}
+
 .todo-box-inner {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 5em;
-  padding: 3em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#todo-form {
+  width: 80%;
+  padding: 2em 5em;
+}
+
+#todo-form h2 {
+  font-size: 2em;
 }
 
 .todo-list-box {
-  width: 100%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: 1px solid brown;
+}
+
+.todo-list-box h2 {
+  font-size: 2em;
+}
+
+#todo-form input {
+  height: 2em;
+  width: 80%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: whitesmoke;
+  font-size: 1.1em;
+
+  padding: 0.5em;
+
+  background: transparent;
+}
+
+input::placeholder {
+  color: whitesmoke;
+  font-size: 1.3em;
 }
 
 ul {
@@ -136,6 +186,8 @@ ul {
 
 li {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1em;
   font-size: 1.5em;
 }

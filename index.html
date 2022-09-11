@@ -21,16 +21,17 @@
       </div>
 
       <h2 id="clock" class="clock">00:00</h2>
-
-      <form id="loginForm" class="hidden">
-        <input
-          required
-          maxlength="15"
-          type="text"
-          placeholder="이름을 입력해주세요"
-        />
-        <button class="loginButton">로그인하기</button>
-      </form>
+      <div id="loginFormBox" class="hidden">
+        <form id="loginForm">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="이름을 입력해주세요"
+          />
+          <button class="loginButton">로그인하기</button>
+        </form>
+      </div>
 
       <h1 id="greeting" class="hidden"></h1>
 
@@ -60,7 +61,7 @@
     <script src="login.js"></script>
     <script src="background.js"></script>
     <script src="clock.js"></script>
-    <script src="fetchquotes.js"></script>
+    <script src="quotes.js"></script>
     <script src="todo.js"></script>
     <script src="weather.js"></script>
   </body>
