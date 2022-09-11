@@ -10,5 +10,3 @@ function getClock() {
 
 getClock(); // 바로 보이게
 setInterval(getClock, 1000);
-
-// setTimeout(sayHello, 5000);
