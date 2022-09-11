@@ -32,14 +32,15 @@ const USER_NAME_KEY = 'username';
 
 function handelLinkClick(event) {
   event.preventDefault();
-  localStorage.setItem(USER_NAME_KEY, username);
 
+  localStorage.setItem(USER_NAME_KEY, loginInput.value);
   loginForm.classList.add(HIDDEN_NAME);
+
   paintGreeting();
 }
 
 function paintGreeting() {
-  const username = localStorage.getItem('USER_NAME_KEY');
+  const username = localStorage.getItem(USER_NAME_KEY);
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_NAME);
 }
