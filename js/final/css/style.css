@@ -1,20 +1,123 @@
 body {
-  min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.card {
-  width: 80%;
-  max-width: 700px;
-}
-.card-body {
-  padding: 40px;
+
+.hidden {
+  display: none;
 }
 
-.btn {
-  background-color: aquamarine;
+div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+/* 시계 */
+
+.clock {
+  font-size: 4em;
+}
+
+/* 날씨 */
+
+.weather {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 1.5em;
+
+  padding-right: 2em;
+}
+
+.weather span:last-child {
+  color: gray;
+}
+
+/* login form */
+
+input {
+  height: 2em;
+  width: 18em;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.loginButton {
+  background-color: pink;
   border: none;
+  width: 20em;
+
+  height: 3em;
+  font-size: 1.5em;
+
+  cursor: pointer;
+}
+
+/* 로그인 */
+
+h1 {
+  color: rosybrown;
+}
+
+/* 명언 */
+
+#quote {
+  border: 1px solid darkgray;
   padding: 2em;
+}
+
+#quote span:first-child {
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+#quote span:last-child {
+  color: darkgray;
+}
+
+/* 투두리스트 */
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+li {
+  display: flex;
+  gap: 1em;
+  font-size: 1.5em;
+}
+
+.todo-button {
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
+
+/* 배경이미지  */
+
+img {
+  width: 30em;
 }
